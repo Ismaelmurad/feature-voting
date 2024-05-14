@@ -1,0 +1,8 @@
+.env
+.idea
+.vscode
+.DS_Store
+vendor
+!public/vendor
+node_modules
+uploads

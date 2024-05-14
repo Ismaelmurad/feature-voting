@@ -1,0 +1,54 @@
+version: '3.7'
+services:
+
+  mariadb:
+    image: mariadb:10.5
+    command: mysqld --sql_mode=""
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: feature_voting
+      MYSQL_USER: feature
+      MYSQL_PASSWORD: secret
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - "3306:3306"
+    networks:
+      - feature_voting
+
+  php:
+    build:
+      context: ./.docker/php/
+    volumes:
+      - ./:/var/www/html
+      - ./.docker/php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+      - ./.docker/php/conf.d/memory_limit.ini:/usr/local/etc/php/conf.d/memory_limit.ini
+      - ./.docker/php/conf.d/max_execution_time.ini:/usr/local/etc/php/conf.d/max_execution_time.ini
+      - ./.docker/php/conf.d/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    networks:
+      - feature_voting
+
+  apache:
+    build:
+      context: ./.docker/apache2/
+    depends_on:
+      - php
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - '8000:80'
+    networks:
+      - feature_voting
+
+  # MailHog SMTP Dev Server
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "1025:1025" # smtp server
+      - "8025:8025" # web ui
+    networks:
+      - feature_voting
+
+networks:
+  feature_voting:
+    name: feature_voting

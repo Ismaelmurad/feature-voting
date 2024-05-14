@@ -1,0 +1,8 @@
+# Globale Rewrite Regeln
+RewriteEngine On
+
+# Alle Pfade, die keine Dateien, Symlinks oder Verzeichnisse sind, werden auf die index.php umgeleitet
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule .* index.php

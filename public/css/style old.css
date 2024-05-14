@@ -1,0 +1,151 @@
+
+body {
+    background: white;
+}
+
+
+.login {
+    /*border-style: solid;*/
+    border: 1px solid;
+    outline: 1px solid;
+    padding: 30px;
+    margin: 1px;
+    margin-top: -1px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.arial {
+    font-family: "Arial";
+
+}
+
+.login_logo {
+    margin-bottom: 50px;
+
+}
+
+
+.submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.smallbox {
+    border: 1px solid;
+    outline: 1px solid;
+    padding: 30px;
+    margin: 1px;
+    margin-top: -1px;
+    width: 180px;
+    margin-right: 50px;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.spacer_top {
+    margin-top: 50px;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigationBar {
+    margin-top: 150px;
+
+}
+
+div#navigationBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+div#navigationBar li {
+    float: left;
+}
+
+div#navigationBar li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div#navigationBar li a:hover {
+    background-color: #219e3e;
+    color: white;
+}
+
+.searchbar {
+    margin-right: 15px;
+    width: 1000px;
+    border: 1px solid #808080;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.addCustomerButton {
+    margin-left: 100px;
+}
+
+.spacer_bottom {
+    margin-bottom: 7px;
+}
+
+table.table_borders tr td {
+    margin-right: 15px;
+    width: 1500px;
+    border: 1px solid #808080;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+
+.kunde_hinzufügen {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.container {
+    max-width: 20%;
+}
+
+
