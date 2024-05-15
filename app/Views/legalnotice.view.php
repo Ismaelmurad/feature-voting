@@ -18,11 +18,11 @@ Controller::partial(
     </div>
     <section>
         <div><p><strong>Haftung für Inhalte</strong></p>
-            <p>Alle Inhalte unseres Internetauftritts wurden mit größter
+            <p>Alle Inhalte meines Internetauftritts wurden mit größter
                 Sorgfalt und nach bestem Gewissen erstellt. Für die Richtigkeit, Vollständigkeit und
-                Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als
-                Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
-                nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+                Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als
+                Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
+                nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als
                 Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
                 Informationen zu überwachen oder nach Umständen zu forschen, die auf eine
                 rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der
@@ -30,7 +30,7 @@ Controller::partial(
                 unberührt.</p>
             <p>Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt
                 der Kenntniserlangung einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden
-                von den o.g. Rechtsverletzungen werden wir diese Inhalte unverzüglich entfernen.</p>
+                von den o.g. Rechtsverletzungen werde ich diese Inhalte unverzüglich entfernen.</p>
         </div>
     </section>
 </div>

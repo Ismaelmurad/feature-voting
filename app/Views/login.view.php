@@ -26,9 +26,8 @@ use App\Controllers\Controller;
         <div class="card border-0 p-5">
 
             <div class="text-center mb-2">
-                <!-- @ToDo: Logo einbauen -->
-                <!--                <img src="/public/images/galawork-logo-transparent.png" style="height: 50px" alt="Logo"/>-->
-                Feature Voting
+
+                                <img src="/public/images/feature_voting_logo.png" style="height: 50px" alt="Logo"/>
             </div>
 
             <div class="mt-3">

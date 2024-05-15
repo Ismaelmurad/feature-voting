@@ -24,9 +24,8 @@ $user = App::get('session')->user();
     <div class="container">
         <a class="navbar-brand" <?php if (null !== $user): ?>href="/dashboard"
            <?php else: ?>href="/vote"<?php endif; ?>>
-            <!-- @ToDo: Logo hinzufügen -->
-<!--            <img src="/public/images/galawork-logo-transparent.png" style="height: 50px" alt="Galawork Logo"/>-->
-            Feature Voting
+
+            <img src="/public/images/feature_voting_logo.png" style="height: 50px" alt="Feature_voting_logo"/>
         </a>
         <?php if (null !== $user): ?>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
