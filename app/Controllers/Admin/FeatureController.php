@@ -107,7 +107,7 @@ class FeatureController extends Controller
                 (new Feature())
                     ->setName(Request::input('name'))
                     ->setFeatureCategoryId((int)Request::input('feature_category_id'))
-                    ->setDescription(Request::input('description', null))
+                    ->setDescription(Request::input('description', ''))
                     ->setVotingEndsAt($votingEndsAt)
                     ->save();
             } catch (Exception $e) {
