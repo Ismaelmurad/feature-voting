@@ -1,4 +1,3 @@
-version: '3.7'
 services:
 
   mariadb:
@@ -43,6 +42,7 @@ services:
   # MailHog SMTP Dev Server
   mailhog:
     image: mailhog/mailhog:latest
+    platform: linux/amd64
     ports:
       - "1025:1025" # smtp server
       - "8025:8025" # web ui
