@@ -1,6 +1,6 @@
 # Feature Voting
 
-Technologien:
+Technologies:
 - PHP
 - MySQL (MariaDB)
 - HTML
